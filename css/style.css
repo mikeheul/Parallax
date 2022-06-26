@@ -51,6 +51,11 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+     background-size: cover;
+    background-position: center;
+    height: 100%;
+    text-align: center;
 }
 
 section h1 {
@@ -59,10 +64,22 @@ section h1 {
     margin: 25px 0;
     text-transform: uppercase;
     word-wrap: break-word;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+    will-change: transform;
+}
+
+.is-visible {
+    transform: translateY(-50%);
+    opacity: 1;
 }
 
 .section1 { 
-    background-image: url("../img/Parallax-home-img-1.jpg"); }
+    background-image: url("../img/parallax1.jpg");  
+}
 .section1 ion-icon {
     position: absolute;
     font-size: 50px;
@@ -70,12 +87,12 @@ section h1 {
     animation: fade_move_down 2s ease-in-out infinite;
 }
 
-.section2 { background-image: url("../img/Parallax-home-img-2.jpg"); }
-.section3 { background-image: url("../img/Parallax-home-img-3.jpg"); }
-.section4 { background-image: url("../img/Parallax-home-img-4.jpg"); }
-.section5 { background-image: url("../img/Parallax-home-img-5.jpg"); }
-.section6 { background-image: url("../img/Parallax-home-img-6.jpg"); }
-.section7 { background-image: url("../img/Parallax-home-img-7.jpg"); }
+.section2 { background-image: url("../img/parallax2.jpg"); }
+.section3 { background-image: url("../img/parallax3.jpg"); }
+.section4 { background-image: url("../img/parallax4.jpg"); }
+.section5 { background-image: url("../img/parallax5.jpg"); }
+.section6 { background-image: url("../img/parallax6.jpg"); }
+.section7 { background-image: url("../img/parallax7.jpg"); }
 
 @keyframes fade_move_down {
     0%   { transform:translate(0, -20px); opacity: 0; }
