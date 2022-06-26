@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat,sans-serif;
+    scroll-behavior: smooth;
+    color: #fff;
+}
+
+header {
+    position: absolute; /* min-height: 100vh; */
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 0 0px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    padding: 50px;
+}
+
+nav .logo h1 {
+    z-index: 10;
+    font-weight: 300;
+}
+
+nav .burger {
+    z-index: 20;
+    padding-right: 30px;
+}
+
+.parallax {
+    position: relative;
+    flex-direction: column;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h1 {
+    font-size: 60px;
+    font-weight: 300;
+    margin: 25px 0;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.section1 { 
+    background-image: url("../img/Parallax-home-img-1.jpg"); }
+.section1 ion-icon {
+    position: absolute;
+    font-size: 50px;
+    bottom: 20px;
+    animation: fade_move_down 2s ease-in-out infinite;
+}
+
+.section2 { background-image: url("../img/Parallax-home-img-2.jpg"); }
+.section3 { background-image: url("../img/Parallax-home-img-3.jpg"); }
+.section4 { background-image: url("../img/Parallax-home-img-4.jpg"); }
+.section5 { background-image: url("../img/Parallax-home-img-5.jpg"); }
+.section6 { background-image: url("../img/Parallax-home-img-6.jpg"); }
+.section7 { background-image: url("../img/Parallax-home-img-7.jpg"); }
+
+@keyframes fade_move_down {
+    0%   { transform:translate(0, -20px); opacity: 0; }
+    50%  { opacity: 1; }
+    100% { transform:translate(0, 20px); opacity: 0; }
+}
