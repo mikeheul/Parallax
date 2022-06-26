@@ -59,7 +59,7 @@ section {
 }
 
 section h1 {
-    font-size: 8vw; 
+    font-size: 6vw; 
     font-weight: 300;
     margin: 25px 0;
     text-transform: uppercase;
@@ -98,4 +98,10 @@ section h1 {
     0%   { transform:translate(0, -20px); opacity: 0; }
     50%  { opacity: 1; }
     100% { transform:translate(0, 20px); opacity: 0; }
+}
+
+@media(max-width:600px) {
+    section h1 {
+        font-size: 8vw;
+    }
 }
